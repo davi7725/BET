@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BET
 {
-    class BST
+    class BET
     {
         Node root = null;
 

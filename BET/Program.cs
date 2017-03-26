@@ -36,7 +36,7 @@ namespace BET
                           "null;" + 
                           "null";
             string[] instructions = text.Split(';');
-            BST tree = new BST();
+            BET tree = new BET();
 
             tree.Insert(instructions);
             List<string> listOfNodes = tree.InOrder();
