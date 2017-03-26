@@ -11,6 +11,11 @@ namespace BET
         Node root = null;
 
 
+
+        public BET(string[] instructions)
+        {
+            Insert(instructions);
+        }
         public void Insert(string[] instructions)
         {
             int i = 0;
@@ -61,6 +66,19 @@ namespace BET
             }
             return listInOrder;
         }
-        
+
+
+        public override string ToString()
+        {
+            string returnString = "";
+            List<string> listOfNodes = InOrder();
+
+            foreach (string s in listOfNodes)
+            {
+                returnString += s + " ";
+            }
+
+            return returnString;
+        }
     }
 }

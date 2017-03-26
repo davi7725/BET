@@ -36,15 +36,10 @@ namespace BET
                           "null;" + 
                           "null";
             string[] instructions = text.Split(';');
-            BET tree = new BET();
+            BET tree = new BET(instructions);
 
             tree.Insert(instructions);
-            List<string> listOfNodes = tree.InOrder();
-            
-            foreach(string s in listOfNodes)
-            {
-                Console.Write(s + " ");
-            }
+            Console.WriteLine(tree);
 
             Console.ReadKey();
 
